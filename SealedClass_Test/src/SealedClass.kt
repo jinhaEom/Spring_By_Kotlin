@@ -27,7 +27,7 @@ object DeveloperPool{
     fun add(developer: Developer) = when(developer){
         is BackendDeveloper -> pool[developer.name] = developer
         is FrontendDeveloper -> pool[developer.name] = developer
-        is OtherDeveloper -> println("지원하지 않는 개발자v   종류입니다.")
+        is OtherDeveloper -> println("지원하지 않는 개발자 종류입니다.")
 
     }
     fun get(name:String) = pool[name]
