@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/handgame.iml" filepath="$PROJECT_DIR$/.idea/handgame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/handgame-spring-boot-app/handgame-spring-boot-app.iml" filepath="$PROJECT_DIR$/handgame-spring-boot-app/handgame-spring-boot-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/handgame-spring-boot-autoconfigure/handgame-spring-boot-autoconfigure.iml" filepath="$PROJECT_DIR$/handgame-spring-boot-autoconfigure/handgame-spring-boot-autoconfigure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/handgame-spring-boot-starter/handgame-spring-boot-starter.iml" filepath="$PROJECT_DIR$/handgame-spring-boot-starter/handgame-spring-boot-starter.iml" />
+    </modules>
+  </component>
+</project>

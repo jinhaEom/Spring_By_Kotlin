@@ -13,9 +13,10 @@ fun main(args: Array<String>) {
 
 }
 
+/*
 @RestController
 class HelloController{
 	@GetMapping("/")
 	fun sayHello() = "Hello,World"
 
-}
+}*/
