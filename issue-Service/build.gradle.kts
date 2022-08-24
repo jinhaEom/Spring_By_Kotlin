@@ -26,7 +26,7 @@ subprojects{
 
 	dependencies {
 		// JWT 인증
-		implementation("cpm.auth0:java-jwt:3.19.2")
+		implementation("com.auth0:java-jwt:3.19.2")
 
 		//kotlin 로깅
 		implementation("io.github.microutils:kotlin-logging:1.12.5")

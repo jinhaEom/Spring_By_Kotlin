@@ -1,4 +1,4 @@
-package com.bu.ac.kr.issueService
+package IS.issueService
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
