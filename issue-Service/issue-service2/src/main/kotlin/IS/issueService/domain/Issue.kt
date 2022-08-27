@@ -1,5 +1,8 @@
 package IS.issueService.domain
 
+import IS.issueService.domain.enums.IssuePriority
+import IS.issueService.domain.enums.IssueStatus
+import IS.issueService.domain.enums.IssueType
 import javax.persistence.*
 
 
@@ -33,4 +36,4 @@ class Issue (
     var status : IssueStatus,
 
 
-        ) : BaseEntity()
+    ) : BaseEntity()

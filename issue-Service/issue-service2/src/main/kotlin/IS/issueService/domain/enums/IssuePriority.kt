@@ -1,4 +1,4 @@
-package IS.issueService.domain
+package IS.issueService.domain.enums
 
 enum class IssuePriority {
 
