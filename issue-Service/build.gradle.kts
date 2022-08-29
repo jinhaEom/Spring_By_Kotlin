@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.jetbrains.kotlin.ir.backend.js.compile
 
 plugins {
 	id("org.springframework.boot") version "2.7.3" apply false
@@ -41,6 +42,8 @@ subprojects{
 		//H2DB
 		runtimeOnly("com.h2database:h2")
 		testImplementation("org.springframework.boot:spring-boot-starter-test")
+
+
 	}
 	dependencyManagement{
 		imports{

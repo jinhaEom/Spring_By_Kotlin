@@ -1,10 +1,12 @@
 package IS.issueService.service
 
+import IS.issueService.Exception.NotFoundException
 import IS.issueService.domain.Issue
 import IS.issueService.domain.IssueRepository
 import IS.issueService.domain.enums.IssueStatus
 import IS.issueService.model.IssueRequest
 import IS.issueService.model.IssueResponse
+import org.springframework.data.repository.findByIdOrNull
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 
@@ -29,5 +31,11 @@ class IssueService(
     fun getAll(status: IssueStatus) =
         issueRepository.findAllByStatusOrderByCreatedAtDesc(status)
             ?.map{ IssueResponse(it) }
+
+    @Transactional(readOnly = true)
+    fun get(id : Long) : IssueResponse{
+        val issue = issueRepository.findByIdOrNull(id) ?: throw NotFoundException("이슈가 존재하지 않습니다.")
+        return IssueResponse(issue)
+    }
 
 }

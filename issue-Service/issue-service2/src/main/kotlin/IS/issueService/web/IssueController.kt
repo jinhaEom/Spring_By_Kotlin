@@ -25,4 +25,11 @@ class IssueController(
         @RequestParam(required = false, defaultValue = "TODO") status : IssueStatus,
 
         ) = issueService.getAll(status)
+
+    @GetMapping("/{id}")
+    fun get(
+        authUser : AuthUser,  // 사용하지는 않지만 인증절차 때문에 사용
+        @PathVariable id : Long,
+
+    ) = issueService.get(id)
 }
