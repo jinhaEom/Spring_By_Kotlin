@@ -4,6 +4,7 @@ import IS.issueService.domain.enums.IssuePriority
 import IS.issueService.domain.enums.IssueStatus
 import IS.issueService.domain.enums.IssueType
 import javax.persistence.*
+import javax.xml.stream.events.Comment
 
 
 @Entity
@@ -16,6 +17,10 @@ class Issue (
 
     @Column
     var userId : Long,
+
+    @OneToMany(fetch = FetchType.EAGER)
+    val comments : MutableList<Comment> = mutableListOf(),
+
 
     @Column
     var summary : String,
