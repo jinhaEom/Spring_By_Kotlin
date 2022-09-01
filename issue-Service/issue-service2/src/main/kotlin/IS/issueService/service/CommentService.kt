@@ -17,7 +17,7 @@ class CommentService(
 ) {
 
     @Transactional
-    fun create(issueId : Long, userId: Long, username: String, request : CommentRequest) : CommentResponse {
+    fun create(issueId : Long, userId: Long, username: String, request : CommentRequest) : Comment {
         val issue = issueRepository.findByIdOrNull(issueId) ?: throw NotFoundException("이슈가 존재하지 않습니다.")
 
         val comment = Comment(

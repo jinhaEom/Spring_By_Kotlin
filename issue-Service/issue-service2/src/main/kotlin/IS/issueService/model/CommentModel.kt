@@ -15,7 +15,7 @@ data class CommentResponse(
 
 )
 
-fun Comment.toResponse() = CommentResponse(
+fun Comment.toResponse() = CommentResponse( // 확장함수
     id = id!!,
     issueId = issue.id!!,
     userId = userId,
